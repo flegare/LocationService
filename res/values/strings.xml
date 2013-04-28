@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
+
+    <string name="app_name">LocationService</string>      
+    <string name="main_label_toggleOn" >Turn off tracking</string>
+    <string name="main_label_toggleOff">Turn on tracking</string>
+    <string name="title_activity_show_report">ShowReportActivity</string>
+
+</resources>

@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ToggleButton
+            android:id="@+id/main_bt_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ToggleButton"
+            android:textOn="@string/main_label_toggleOn"
+            android:textOff="@string/main_label_toggleOff"
+            android:onClick="toggleButtonClicked" />
+
+        <Button
+            android:id="@+id/btSwitchActivity"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="launchOtherActivity"
+            android:text="See location info" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_layout_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+        
+        <fragment
+          android:id="@+id/map"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:name="com.google.android.gms.maps.MapFragment"/>
+              
+    </LinearLayout>
+
+</RelativeLayout>
